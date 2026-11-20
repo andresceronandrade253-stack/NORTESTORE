@@ -1,0 +1,18 @@
+{
+  "marca": "NØRTE",
+  "anuncios": [
+    "ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS SUPERIORES A $150.000",
+    "DROP 07 YA DISPONIBLE · UNIDADES LIMITADAS",
+    "PAGO CONTRA ENTREGA EN CIUDADES PRINCIPALES"
+  ],
+  "whatsapp": "573001234567",
+  "envioGratisDesde": 150000,
+  "costoEnvio": 12000,
+  "hero": {
+    "etiqueta": "DROP 07 · TEMPORADA NOCTURNA",
+    "titulo": "NUEVO DROP",
+    "subtitulo": "Siluetas oversize, cargos utilitarios y tenis que no pasan desapercibidos. Unidades limitadas, sin reposición.",
+    "cta": "VER EL DROP",
+    "imagen": "https://images.unsplash.com/photo-1588117305388-c2631a279f82?auto=format&fit=crop&w=1200&q=80"
+  }
+}

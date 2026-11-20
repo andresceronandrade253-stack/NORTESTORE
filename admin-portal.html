@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#0b0b0c">
+  <title>Panel · NØRTE</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%23c8ff2e'/%3E%3Cpath d='M9 31V9h6l10 13V9h6v22h-6L15 18v13z' fill='%230b0b0c'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body class="admin">
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="logo-mark" viewBox="0 0 40 40">
+        <path d="M9 31V9h6l10 13V9h6v22h-6L15 18v13z" fill="currentColor"/>
+        <path d="M6 36L34 4" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20h4L19 9l-4-4L4 16v4zM13.5 6.5l4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 8V5a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M3 3l18 18M10.6 5.1A10.8 10.8 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-3.2 4.1M6.6 6.6C3.8 8.4 2 12 2 12s3.5 7 10 7a10 10 0 0 0 5.4-1.6M9.9 9.9a3 3 0 0 0 4.2 4.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="9" cy="10" r="2" fill="currentColor"/><path d="M21 16l-5-5-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4V7zM3 7l9 4 9-4M12 11v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></symbol>
+      <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6l8-3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-logout" viewBox="0 0 24 24"><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 17l-5-5 5-5M5 12h11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12l5 5 9-10" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 3l10 18H2L12 3z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v5M12 18v.01" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v12M7 11l5 5 5-5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor"/></symbol>
+      <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.6 9.6 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 4.9.4.3.7.9.7 1.9V21c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></symbol>
+      <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ LOGIN ============ -->
+  <section class="login" id="loginView" hidden>
+    <form class="login__card" id="loginForm" novalidate autocomplete="on">
+      <div class="login__brand">
+        <svg class="login__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <div>
+          <p class="login__word">NØRTE</p>
+          <p class="login__sub">Panel de administración</p>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="lUsuario">Usuario</label>
+        <input id="lUsuario" name="usuario" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" required>
+      </div>
+      <div class="field">
+        <label for="lClave">Contraseña</label>
+        <div class="pass">
+          <input id="lClave" name="clave" type="password" autocomplete="current-password" required>
+          <button class="pass__toggle" type="button" data-toggle-pass="lClave" aria-label="Mostrar contraseña">
+            <svg aria-hidden="true"><use href="#i-eye"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <p class="login__error" id="loginError" role="alert" hidden></p>
+
+      <button class="btn btn--primary btn--block" type="submit" id="loginBtn">
+        <svg aria-hidden="true"><use href="#i-lock"/></svg> <span>ENTRAR AL PANEL</span>
+      </button>
+
+      <p class="login__mode" id="loginMode"></p>
+    </form>
+  </section>
+
+  <!-- ============ CONEXIÓN CON GITHUB (solo en GitHub Pages) ============ -->
+  <section class="login" id="ghView" hidden>
+    <form class="login__card login__card--wide" id="ghForm" novalidate autocomplete="off">
+      <div class="login__brand">
+        <svg class="login__mark" aria-hidden="true"><use href="#i-github"/></svg>
+        <div>
+          <p class="login__word">CONECTAR GITHUB</p>
+          <p class="login__sub">Solo se hace una vez por dispositivo</p>
+        </div>
+      </div>
+      <p class="gh-intro">Tu tienda está en GitHub Pages, que no tiene servidor propio. Para que los cambios lleguen a tus clientes, el panel los guarda directamente en tu repositorio usando un <strong>token de acceso</strong>.</p>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="gOwner">Usuario de GitHub *</label>
+          <input id="gOwner" name="owner" type="text" autocapitalize="none" spellcheck="false" required>
+        </div>
+        <div class="field">
+          <label for="gRepo">Repositorio *</label>
+          <input id="gRepo" name="repo" type="text" autocapitalize="none" spellcheck="false" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="gBranch">Rama</label>
+        <input id="gBranch" name="branch" type="text" autocapitalize="none" spellcheck="false" placeholder="main">
+      </div>
+      <div class="field">
+        <label for="gToken">Token de acceso (fine-grained) *</label>
+        <div class="pass">
+          <input id="gToken" name="token" type="password" autocomplete="off" spellcheck="false" placeholder="github_pat_…" required>
+          <button class="pass__toggle" type="button" data-toggle-pass="gToken" aria-label="Mostrar token"><svg aria-hidden="true"><use href="#i-eye"/></svg></button>
+        </div>
+      </div>
+
+      <details class="gh-help">
+        <summary>¿Cómo creo el token? (2 minutos)</summary>
+        <ol>
+          <li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a></li>
+          <li><b>Token name:</b> Panel tienda · <b>Expiration:</b> 1 año (o la que prefieras)</li>
+          <li><b>Repository access:</b> Only select repositories → elige el repositorio de tu tienda</li>
+          <li><b>Permissions → Repository permissions → Contents:</b> Read and write</li>
+          <li>Clic en <b>Generate token</b>, cópialo y pégalo aquí</li>
+        </ol>
+        <p>El token se guarda solo en este navegador. No lo compartas con nadie.</p>
+      </details>
+
+      <p class="login__error" id="ghError" role="alert" hidden></p>
+
+      <button class="btn btn--primary btn--block" type="submit" id="ghBtn">
+        <svg aria-hidden="true"><use href="#i-github"/></svg> <span>VERIFICAR Y CONECTAR</span>
+      </button>
+      <button class="link-back gh-local" type="button" id="ghLocal">Usar modo local (los cambios solo se ven en este navegador)</button>
+    </form>
+  </section>
+
+  <!-- ============ CARGANDO ============ -->
+  <div class="boot" id="bootView">
+    <svg class="boot__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+  </div>
+
+  <!-- ============ APP ============ -->
+  <div class="app" id="appView" hidden>
+    <header class="a-top">
+      <div class="a-top__inner">
+        <div class="a-top__brand">
+          <svg class="logo__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+          <span class="logo__word">NØRTE</span>
+          <span class="tag tag--accent">ADMIN</span>
+        </div>
+        <div class="a-top__right">
+          <span class="mode-pill" id="modePill"></span>
+          <span class="a-top__user" id="userLabel"></span>
+          <a class="btn btn--ghost btn--sm" href="index.html" target="_blank" rel="noopener">
+            <svg aria-hidden="true"><use href="#i-ext"/></svg> <span class="hide-sm">Ver tienda</span>
+          </a>
+          <button class="icon-btn" type="button" id="logoutBtn" aria-label="Cerrar sesión" title="Cerrar sesión">
+            <svg aria-hidden="true"><use href="#i-logout"/></svg>
+          </button>
+        </div>
+      </div>
+      <nav class="a-tabs" role="tablist" aria-label="Secciones del panel">
+        <button class="a-tab is-active" type="button" role="tab" aria-selected="true" data-tab="productos">
+          <svg aria-hidden="true"><use href="#i-box"/></svg> Productos
+        </button>
+        <button class="a-tab" type="button" role="tab" aria-selected="false" data-tab="config">
+          <svg aria-hidden="true"><use href="#i-settings"/></svg> Configuración
+        </button>
+        <button class="a-tab" type="button" role="tab" aria-selected="false" data-tab="seguridad">
+          <svg aria-hidden="true"><use href="#i-shield"/></svg> Seguridad
+        </button>
+      </nav>
+    </header>
+
+    <div class="a-wrap">
+      <div class="a-alert" id="defaultAlert" hidden>
+        <svg aria-hidden="true"><use href="#i-alert"/></svg>
+        <p>Estás usando las <strong>credenciales por defecto</strong>. Cámbialas antes de publicar la tienda.</p>
+        <button class="btn btn--sm btn--primary" type="button" data-goto-tab="seguridad">CAMBIAR AHORA</button>
+      </div>
+
+      <!-- ===== PRODUCTOS ===== -->
+      <section class="a-panel" id="tab-productos" role="tabpanel">
+        <div class="stats" id="stats"></div>
+
+        <div class="a-toolbar">
+          <label class="a-search">
+            <svg aria-hidden="true"><use href="#i-search"/></svg>
+            <input type="search" id="prodSearch" placeholder="Buscar por nombre o referencia" aria-label="Buscar productos">
+          </label>
+          <label class="select">
+            <span class="visually-hidden">Filtrar por categoría</span>
+            <select id="prodFilter">
+              <option value="todo">Todas las categorías</option>
+              <option value="camisetas">Camisetas</option>
+              <option value="pantalones">Pantalones</option>
+              <option value="calzado">Calzado</option>
+              <option value="gorras">Gorras Deportivas</option>
+            </select>
+          </label>
+          <button class="btn btn--primary" type="button" id="newProduct">
+            <svg aria-hidden="true"><use href="#i-plus"/></svg> NUEVO PRODUCTO
+          </button>
+        </div>
+
+        <ul class="plist" id="prodList"></ul>
+        <div class="empty" id="prodEmpty" hidden>
+          <p class="empty__big">SIN PRODUCTOS</p>
+          <p>No hay productos con ese filtro. Crea uno nuevo para empezar.</p>
+        </div>
+      </section>
+
+      <!-- ===== CONFIGURACIÓN ===== -->
+      <section class="a-panel" id="tab-config" role="tabpanel" hidden>
+        <form class="cfg" id="configForm" novalidate>
+          <div class="cfg__main">
+            <div class="a-card">
+              <h2 class="a-card__title">Barra de anuncios</h2>
+              <p class="a-card__hint">Mensajes que se desplazan en la franja superior de la tienda (máx. 8).</p>
+              <div class="ann-list" id="annList"></div>
+              <button class="btn btn--ghost btn--sm" type="button" id="addAnn">
+                <svg aria-hidden="true"><use href="#i-plus"/></svg> AGREGAR ANUNCIO
+              </button>
+            </div>
+
+            <div class="a-card">
+              <h2 class="a-card__title">Banner principal (Hero)</h2>
+              <div class="field">
+                <label for="cTitulo">Título del banner *</label>
+                <input id="cTitulo" name="titulo" type="text" maxlength="40" required>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="cEtiqueta">Etiqueta superior</label>
+                  <input id="cEtiqueta" name="etiqueta" type="text" maxlength="60">
+                </div>
+                <div class="field">
+                  <label for="cCta">Texto del botón</label>
+                  <input id="cCta" name="cta" type="text" maxlength="30">
+                </div>
+              </div>
+              <div class="field">
+                <label for="cSubtitulo">Subtítulo</label>
+                <textarea id="cSubtitulo" name="subtitulo" rows="2" maxlength="240"></textarea>
+              </div>
+              <div class="field">
+                <label for="cImagen">Imagen del banner (URL)</label>
+                <div class="url-row">
+                  <input id="cImagen" name="imagen" type="url" placeholder="https://… o img/productos/…">
+                  <label class="btn btn--ghost btn--sm upload-btn">
+                    <svg aria-hidden="true"><use href="#i-upload"/></svg> SUBIR
+                    <input type="file" accept="image/jpeg,image/png,image/webp,image/gif" id="cImagenFile" hidden>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <div class="a-card">
+              <h2 class="a-card__title">Pedidos y envíos</h2>
+              <div class="field">
+                <label for="cWhatsapp">Número de WhatsApp para pedidos *</label>
+                <input id="cWhatsapp" name="whatsapp" type="tel" inputmode="numeric" placeholder="573001234567" required>
+                <small class="field__hint">Con indicativo de país y sin espacios ni "+". Colombia: 57 + celular.</small>
+                <small class="field__error"></small>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="cGratis">Envío gratis desde (COP)</label>
+                  <input id="cGratis" name="envioGratisDesde" type="number" min="0" step="1000">
+                  <small class="field__hint">0 = sin envío gratis</small>
+                </div>
+                <div class="field">
+                  <label for="cCosto">Costo de envío (COP)</label>
+                  <input id="cCosto" name="costoEnvio" type="number" min="0" step="1000">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="cfg__side">
+            <div class="a-card a-card--sticky">
+              <h2 class="a-card__title">Vista previa</h2>
+              <div class="cfg-prev" id="cfgPreview"></div>
+              <button class="btn btn--primary btn--block" type="submit" id="saveConfig">
+                <svg aria-hidden="true"><use href="#i-check"/></svg> GUARDAR CONFIGURACIÓN
+              </button>
+            </div>
+          </aside>
+        </form>
+      </section>
+
+      <!-- ===== SEGURIDAD ===== -->
+      <section class="a-panel" id="tab-seguridad" role="tabpanel" hidden>
+        <div class="sec-grid">
+          <form class="a-card" id="credForm" novalidate>
+            <h2 class="a-card__title">Cambiar credenciales</h2>
+            <p class="a-card__hint">Usuario actual: <strong id="credUser"></strong></p>
+            <div class="field">
+              <label for="sUsuario">Nuevo usuario *</label>
+              <input id="sUsuario" name="usuarioNuevo" type="text" autocomplete="username" autocapitalize="none" spellcheck="false" maxlength="40" required>
+              <small class="field__hint">4 a 40 caracteres: letras, números, punto, guion, guion bajo o @</small>
+              <small class="field__error"></small>
+            </div>
+            <div class="field">
+              <label for="sActual">Contraseña actual *</label>
+              <div class="pass">
+                <input id="sActual" name="claveActual" type="password" autocomplete="current-password" required>
+                <button class="pass__toggle" type="button" data-toggle-pass="sActual" aria-label="Mostrar contraseña"><svg aria-hidden="true"><use href="#i-eye"/></svg></button>
+              </div>
+              <small class="field__error"></small>
+            </div>
+            <div class="field">
+              <label for="sNueva">Nueva contraseña *</label>
+              <div class="pass">
+                <input id="sNueva" name="claveNueva" type="password" autocomplete="new-password" maxlength="128" required>
+                <button class="pass__toggle" type="button" data-toggle-pass="sNueva" aria-label="Mostrar contraseña"><svg aria-hidden="true"><use href="#i-eye"/></svg></button>
+              </div>
+              <div class="meter" aria-hidden="true"><span id="passMeter"></span></div>
+              <small class="field__hint" id="passHint">Mínimo 8 caracteres con letras y números</small>
+              <small class="field__error"></small>
+            </div>
+            <div class="field">
+              <label for="sConfirma">Confirmar nueva contraseña *</label>
+              <input id="sConfirma" name="confirmar" type="password" autocomplete="new-password" maxlength="128" required>
+              <small class="field__error"></small>
+            </div>
+            <button class="btn btn--primary btn--block" type="submit">
+              <svg aria-hidden="true"><use href="#i-lock"/></svg> ACTUALIZAR CREDENCIALES
+            </button>
+          </form>
+
+          <div class="sec-side">
+            <div class="a-card">
+              <h2 class="a-card__title">Estado del sistema</h2>
+              <ul class="checks" id="diagList"></ul>
+            </div>
+
+            <div class="a-card" id="ghCard" hidden>
+              <h2 class="a-card__title">Publicación en GitHub</h2>
+              <p class="a-card__hint">Repositorio: <strong id="ghRepoLabel"></strong><br>Los cambios tardan alrededor de 1 minuto en verse para tus clientes.</p>
+              <button class="btn btn--ghost btn--sm btn--danger" type="button" id="ghDisconnect">
+                DESCONECTAR ESTE DISPOSITIVO
+              </button>
+            </div>
+
+            <div class="a-card">
+              <h2 class="a-card__title">Respaldo de datos</h2>
+              <p class="a-card__hint">Descarga una copia del catálogo y la configuración, o restaura una copia anterior.</p>
+              <div class="btn-stack">
+                <button class="btn btn--ghost btn--sm" type="button" id="exportBtn">
+                  <svg aria-hidden="true"><use href="#i-download"/></svg> EXPORTAR RESPALDO (.JSON)
+                </button>
+                <label class="btn btn--ghost btn--sm upload-btn">
+                  <svg aria-hidden="true"><use href="#i-upload"/></svg> IMPORTAR RESPALDO
+                  <input type="file" accept="application/json,.json" id="importFile" hidden>
+                </label>
+                <button class="btn btn--ghost btn--sm btn--danger" type="button" id="seedBtn">
+                  RESTAURAR CATÁLOGO DE EJEMPLO
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- ============ EDITOR DE PRODUCTO ============ -->
+  <div class="a-modal" id="editor" hidden>
+    <div class="a-modal__backdrop" data-close-editor></div>
+    <div class="a-modal__panel a-modal__panel--xl" role="dialog" aria-modal="true" aria-labelledby="editorTitle">
+      <header class="a-modal__head">
+        <h2 class="a-modal__title" id="editorTitle">Nuevo producto</h2>
+        <button class="icon-btn" type="button" data-close-editor aria-label="Cerrar editor"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+      </header>
+
+      <form class="editor" id="prodForm" novalidate>
+        <div class="editor__form">
+          <div class="field">
+            <label for="pNombre">Nombre del producto *</label>
+            <input id="pNombre" name="nombre" type="text" maxlength="80" required placeholder="Ej. Hoodie Midnight Oversize">
+            <small class="field__error"></small>
+          </div>
+          <div class="field">
+            <label for="pDesc">Descripción corta <span class="counter" id="descCount">0/600</span></label>
+            <textarea id="pDesc" name="descripcion" rows="3" maxlength="600" placeholder="Material, fit y detalles que enamoran"></textarea>
+          </div>
+          <div class="field">
+            <label for="pCategoria">Categoría *</label>
+            <select id="pCategoria" name="categoria">
+              <option value="camisetas">Camisetas</option>
+              <option value="pantalones">Pantalones</option>
+              <option value="calzado">Calzado</option>
+              <option value="gorras">Gorras Deportivas</option>
+            </select>
+          </div>
+
+          <fieldset class="fset">
+            <legend>Imágenes (3 ángulos) *</legend>
+            <p class="fset__hint">Pega una URL o sube un archivo (JPG, PNG, WEBP · máx. 5 MB). También puedes arrastrar la imagen.</p>
+            <div class="img-slots" id="imgSlots"></div>
+            <small class="field__error" id="imgError"></small>
+          </fieldset>
+
+          <fieldset class="fset">
+            <legend>Precios (COP)</legend>
+            <div class="field-row">
+              <div class="field">
+                <label for="pPrecio">Precio normal *</label>
+                <input id="pPrecio" name="precio" type="number" min="0" step="1000" required placeholder="85000">
+                <small class="field__error"></small>
+              </div>
+              <div class="field">
+                <label for="pOferta">Precio de oferta</label>
+                <input id="pOferta" name="precioOferta" type="number" min="0" step="1000" placeholder="0">
+                <small class="field__hint" id="ofertaHint">Se aplica con "En Promoción" activo</small>
+                <small class="field__error"></small>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fset">
+            <legend>Tallas disponibles *</legend>
+            <div class="size-pick" id="sizePick"></div>
+            <small class="field__error" id="sizeError"></small>
+          </fieldset>
+
+          <fieldset class="fset">
+            <legend>Etiquetas y estado</legend>
+            <div class="switches">
+              <label class="switch"><input type="checkbox" name="enPromocion"><span class="switch__ui"></span><span class="switch__txt"><b>En Promoción</b><small>Muestra precio tachado y % de descuento</small></span></label>
+              <label class="switch"><input type="checkbox" name="masVendido"><span class="switch__ui"></span><span class="switch__txt"><b>Lo Más Vendido</b><small>Aparece en la sección de top ventas</small></span></label>
+              <label class="switch"><input type="checkbox" name="nuevo"><span class="switch__ui"></span><span class="switch__txt"><b>Nuevo Drop</b><small>Aparece en "Nuevos Drops" con etiqueta DROP</small></span></label>
+              <label class="switch switch--danger"><input type="checkbox" name="agotado"><span class="switch__ui"></span><span class="switch__txt"><b>Agotado</b><small>Se ve en la tienda pero no se puede comprar</small></span></label>
+              <label class="switch"><input type="checkbox" name="activo"><span class="switch__ui"></span><span class="switch__txt"><b>Visible en la tienda</b><small>Desactívalo para ocultarlo sin borrarlo</small></span></label>
+            </div>
+          </fieldset>
+        </div>
+
+        <aside class="editor__preview">
+          <p class="editor__label">Vista previa en vivo</p>
+          <div class="preview-card" id="prodPreview"></div>
+          <div class="preview-detail" id="prodPreviewDetail"></div>
+        </aside>
+      </form>
+
+      <footer class="a-modal__foot">
+        <p class="a-modal__msg" id="editorMsg"></p>
+        <button class="btn btn--ghost" type="button" data-close-editor>CANCELAR</button>
+        <button class="btn btn--primary" type="submit" form="prodForm" id="saveProduct">
+          <svg aria-hidden="true"><use href="#i-check"/></svg> GUARDAR PRODUCTO
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- ============ CONFIRMACIÓN ============ -->
+  <div class="a-modal" id="confirmDlg" hidden>
+    <div class="a-modal__backdrop" data-confirm="no"></div>
+    <div class="a-modal__panel a-modal__panel--sm" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmText">
+      <div class="confirm">
+        <div class="confirm__icon"><svg aria-hidden="true"><use href="#i-alert"/></svg></div>
+        <h2 class="confirm__title" id="confirmTitle"></h2>
+        <p class="confirm__text" id="confirmText"></p>
+        <div class="confirm__actions">
+          <button class="btn btn--ghost" type="button" data-confirm="no">CANCELAR</button>
+          <button class="btn btn--primary" type="button" data-confirm="si" id="confirmOk">CONFIRMAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <script src="js/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>NØRTE · Streetwear Drops Colombia</title>
+  <meta name="description" content="NØRTE: camisetas oversize, cargos, tenis y gorras deportivas en drops limitados. Envíos a toda Colombia y pedidos por WhatsApp.">
+  <meta name="theme-color" content="#0b0b0c">
+  <meta property="og:title" content="NØRTE · Streetwear Drops">
+  <meta property="og:description" content="Drops limitados de streetwear. Pide por WhatsApp, envío a toda Colombia.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='8' fill='%230b0b0c'/%3E%3Cpath d='M9 31V9h6l10 13V9h6v22h-6L15 18v13z' fill='%23f4f4f0'/%3E%3Cpath d='M6 36L34 4' stroke='%23c8ff2e' stroke-width='3.5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- SVG reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="logo-mark" viewBox="0 0 40 40">
+        <path d="M9 31V9h6l10 13V9h6v22h-6L15 18v13z" fill="currentColor"/>
+        <path d="M6 36L34 4" stroke="var(--accent)" stroke-width="3.5" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 7h12l1 14H5L6 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9 10V6a3 3 0 0 1 6 0v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 16l4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-chev-l" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-chev-r" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></symbol>
+      <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="6" cy="18" r="2" fill="var(--bg)" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="18" r="2" fill="var(--bg)" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h14l-3-3M20 16H6l3 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-cash" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+      <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z" fill="currentColor"/></symbol>
+      <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3z"/></symbol>
+      <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+      <symbol id="i-tt" viewBox="0 0 24 24"><path fill="currentColor" d="M16.5 3c.4 2.3 1.9 3.8 4.2 4v3.1a7.5 7.5 0 0 1-4.1-1.3v6.6A6 6 0 1 1 10.6 9.5v3.2a2.9 2.9 0 1 0 2.8 2.9V3h3.1z"/></symbol>
+    </defs>
+  </svg>
+
+  <!-- 1. Barra de anuncios -->
+  <div class="announce" id="announce" role="region" aria-label="Anuncios">
+    <div class="announce__track" id="announceTrack">
+      <span class="announce__item">ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS SUPERIORES A $150.000</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo" aria-label="NØRTE inicio">
+        <svg class="logo__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="logo__word">NØRTE</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#drops" class="nav__link">Drops</a>
+        <a href="#mas-vendido" class="nav__link">Top ventas</a>
+        <a href="#ofertas" class="nav__link nav__link--hot">Ofertas</a>
+        <a href="#catalogo" class="nav__link">Catálogo</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn" id="searchToggle" type="button" aria-label="Buscar productos" aria-expanded="false" aria-controls="searchBar">
+          <svg aria-hidden="true"><use href="#i-search"/></svg>
+        </button>
+        <button class="icon-btn cart-btn" id="cartOpen" type="button" aria-label="Abrir carrito">
+          <svg aria-hidden="true"><use href="#i-bag"/></svg>
+          <span class="cart-btn__count" id="cartCount" aria-live="polite">0</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="search-bar" id="searchBar" hidden>
+      <div class="container search-bar__inner">
+        <svg aria-hidden="true"><use href="#i-search"/></svg>
+        <input type="search" id="searchInput" placeholder="Busca tu fit: cargo, tenis, gorra…" autocomplete="off" aria-label="Buscar productos">
+        <button class="icon-btn icon-btn--sm" id="searchClose" type="button" aria-label="Cerrar búsqueda">
+          <svg aria-hidden="true"><use href="#i-close"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio">
+
+    <!-- 2. Hero -->
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__noise" aria-hidden="true"></div>
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <span class="tag tag--accent hero__tag" id="heroTag"><span class="pulse-dot" aria-hidden="true"></span><span id="heroTagText">DROP 07 · TEMPORADA NOCTURNA</span></span>
+          <h1 class="hero__title" id="heroTitle">
+            <span class="hero__line" id="heroTitleText">NUEVO DROP</span>
+            <span class="hero__line hero__line--outline" aria-hidden="true">NØRTE</span>
+          </h1>
+          <p class="hero__sub" id="heroSub">Siluetas oversize, cargos utilitarios y tenis que no pasan desapercibidos. Unidades limitadas, sin reposición.</p>
+          <div class="hero__ctas">
+            <a href="#drops" class="btn btn--primary" id="heroCta">
+              <span id="heroCtaText">VER EL DROP</span>
+              <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a href="#catalogo" class="btn btn--ghost">CATÁLOGO COMPLETO</a>
+          </div>
+          <ul class="hero__stats" aria-label="Beneficios">
+            <li><strong>48H</strong><span>Despacho</span></li>
+            <li><strong>100%</strong><span>Algodón</span></li>
+            <li><strong>COD</strong><span>Contra entrega</span></li>
+          </ul>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__frame">
+            <img id="heroImg" src="https://images.unsplash.com/photo-1588117305388-c2631a279f82?auto=format&fit=crop&w=1200&q=80" alt="Modelo con outfit streetwear del nuevo drop" width="600" height="750" fetchpriority="high">
+            <span class="sticker sticker--a">LIMITED<br>RUN</span>
+            <span class="sticker sticker--b">SS/26</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ticker -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>CAMISETAS</span><i>✦</i><span>PANTALONES</span><i>✦</i><span>CALZADO</span><i>✦</i><span>GORRAS DEPORTIVAS</span><i>✦</i><span>HECHO PARA LA CALLE</span><i>✦</i>
+        <span>CAMISETAS</span><i>✦</i><span>PANTALONES</span><i>✦</i><span>CALZADO</span><i>✦</i><span>GORRAS DEPORTIVAS</span><i>✦</i><span>HECHO PARA LA CALLE</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- 3a. Nuevos Drops -->
+    <section class="section" id="drops" aria-labelledby="dropsTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tag">RECIÉN SALIDO</span>
+            <h2 class="section__title" id="dropsTitle">Nuevos Drops</h2>
+          </div>
+          <div class="rail-nav" data-rail="railDrops">
+            <button class="icon-btn icon-btn--outline" type="button" data-dir="-1" aria-label="Anterior"><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+            <button class="icon-btn icon-btn--outline" type="button" data-dir="1" aria-label="Siguiente"><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="rail" id="railDrops"></div>
+    </section>
+
+    <!-- 3b. Lo más vendido -->
+    <section class="section" id="mas-vendido" aria-labelledby="topTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tag">LO QUE TODOS QUIEREN</span>
+            <h2 class="section__title" id="topTitle">Lo Más Vendido</h2>
+          </div>
+          <div class="rail-nav" data-rail="railTop">
+            <button class="icon-btn icon-btn--outline" type="button" data-dir="-1" aria-label="Anterior"><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+            <button class="icon-btn icon-btn--outline" type="button" data-dir="1" aria-label="Siguiente"><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="rail" id="railTop"></div>
+    </section>
+
+    <!-- 3c. Ofertas -->
+    <section class="section section--sale" id="ofertas" aria-labelledby="saleTitle">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <span class="tag tag--hot"><svg aria-hidden="true"><use href="#i-bolt"/></svg> PRECIOS QUE QUEMAN</span>
+            <h2 class="section__title" id="saleTitle">Promociones</h2>
+          </div>
+          <div class="rail-nav" data-rail="railSale">
+            <button class="icon-btn icon-btn--outline" type="button" data-dir="-1" aria-label="Anterior"><svg aria-hidden="true"><use href="#i-chev-l"/></svg></button>
+            <button class="icon-btn icon-btn--outline" type="button" data-dir="1" aria-label="Siguiente"><svg aria-hidden="true"><use href="#i-chev-r"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="rail" id="railSale"></div>
+    </section>
+
+    <!-- 3d. Catálogo con filtros -->
+    <section class="section" id="catalogo" aria-labelledby="catTitle">
+      <div class="container">
+        <div class="section__head section__head--stack">
+          <div>
+            <span class="tag">TODO EL STOCK</span>
+            <h2 class="section__title" id="catTitle">Catálogo</h2>
+          </div>
+          <div class="toolbar">
+            <p class="toolbar__count" id="catalogCount" aria-live="polite">Cargando…</p>
+            <label class="select">
+              <span class="visually-hidden">Ordenar por</span>
+              <select id="sortSelect">
+                <option value="destacados">Destacados</option>
+                <option value="precio-asc">Precio: menor a mayor</option>
+                <option value="precio-desc">Precio: mayor a menor</option>
+                <option value="descuento">Mayor descuento</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="filters" id="filters" role="tablist" aria-label="Filtrar por categoría">
+          <button class="chip is-active" type="button" role="tab" aria-selected="true" data-cat="todo">Todo</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-cat="camisetas">Camisetas</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-cat="pantalones">Pantalones</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-cat="calzado">Calzado</button>
+          <button class="chip" type="button" role="tab" aria-selected="false" data-cat="gorras">Gorras Deportivas</button>
+        </div>
+
+        <div class="search-pill" id="searchPill" hidden>
+          Resultados para “<strong id="searchPillText"></strong>”
+          <button type="button" id="searchPillClear" aria-label="Quitar búsqueda"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+        </div>
+
+        <div class="grid" id="catalogGrid" aria-live="polite"></div>
+
+        <div class="empty" id="catalogEmpty" hidden>
+          <p class="empty__big">NADA POR AQUÍ</p>
+          <p>No encontramos productos con ese filtro. Prueba otra categoría.</p>
+          <button class="btn btn--ghost" type="button" id="resetFilters">VER TODO</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="perks" aria-label="Beneficios de compra">
+      <div class="container perks__grid">
+        <div class="perk">
+          <svg aria-hidden="true"><use href="#i-truck"/></svg>
+          <div><strong>Envíos a todo Colombia</strong><span id="perkShipping">Gratis desde $150.000 COP</span></div>
+        </div>
+        <div class="perk">
+          <svg aria-hidden="true"><use href="#i-cash"/></svg>
+          <div><strong>Paga como quieras</strong><span>Contra entrega, Nequi, Daviplata o transferencia</span></div>
+        </div>
+        <div class="perk">
+          <svg aria-hidden="true"><use href="#i-swap"/></svg>
+          <div><strong>Cambios fáciles</strong><span>Tienes 15 días para cambiar tu talla</span></div>
+        </div>
+        <div class="perk">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg>
+          <div><strong>Atención por WhatsApp</strong><span>Te respondemos en minutos</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="#inicio" class="logo logo--lg" aria-label="NØRTE inicio">
+            <svg class="logo__mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span class="logo__word">NØRTE</span>
+          </a>
+          <p>Streetwear en drops limitados. Diseñado en Colombia para quienes marcan su propio norte.</p>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h3>Tienda</h3>
+            <a href="#drops">Nuevos drops</a>
+            <a href="#mas-vendido">Lo más vendido</a>
+            <a href="#ofertas">Ofertas</a>
+            <a href="#catalogo">Catálogo</a>
+          </div>
+          <div>
+            <h3>Categorías</h3>
+            <a href="#catalogo" data-cat-link="camisetas">Camisetas</a>
+            <a href="#catalogo" data-cat-link="pantalones">Pantalones</a>
+            <a href="#catalogo" data-cat-link="calzado">Calzado</a>
+            <a href="#catalogo" data-cat-link="gorras">Gorras deportivas</a>
+          </div>
+          <div>
+            <h3>Síguenos</h3>
+            <div class="socials">
+              <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><svg aria-hidden="true"><use href="#i-ig"/></svg></a>
+              <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><svg aria-hidden="true"><use href="#i-tt"/></svg></a>
+              <a href="#" id="footerWa" target="_blank" rel="noopener" aria-label="WhatsApp"><svg aria-hidden="true"><use href="#i-wa"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__big" aria-hidden="true">NØRTE</div>
+      <div class="footer__bottom">
+        <span>© <span id="year">2026</span> NØRTE Streetwear · Colombia</span>
+        <span>Precios en pesos colombianos (COP) · IVA incluido</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 4. Modal de producto -->
+  <div class="modal" id="productModal" aria-hidden="true">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="pmTitle" tabindex="-1">
+      <button class="icon-btn modal__close" type="button" data-close-modal aria-label="Cerrar">
+        <svg aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+      <div class="modal__body" id="pmBody"></div>
+    </div>
+  </div>
+
+  <!-- 5. Carrito lateral -->
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="drawer" id="cartDrawer" aria-hidden="true" aria-labelledby="drawerTitle" role="dialog" aria-modal="true" tabindex="-1">
+    <div class="drawer__head">
+      <h2 class="drawer__title" id="drawerTitle">Tu carrito <span id="drawerCount">(0)</span></h2>
+      <button class="icon-btn" type="button" id="cartClose" aria-label="Cerrar carrito">
+        <svg aria-hidden="true"><use href="#i-close"/></svg>
+      </button>
+    </div>
+
+    <!-- Vista: carrito -->
+    <div class="drawer__view" id="viewCart">
+      <div class="ship-meter" id="shipMeter">
+        <p class="ship-meter__text" id="shipText"></p>
+        <div class="ship-meter__bar"><span id="shipBar"></span></div>
+      </div>
+      <ul class="cart-list" id="cartList"></ul>
+      <div class="cart-empty" id="cartEmpty" hidden>
+        <svg aria-hidden="true"><use href="#i-bag"/></svg>
+        <p class="cart-empty__big">TU CARRITO ESTÁ VACÍO</p>
+        <p>El próximo fit empieza aquí.</p>
+        <button class="btn btn--primary" type="button" data-close-drawer data-goto="#drops">EXPLORAR DROPS</button>
+      </div>
+      <div class="drawer__foot" id="cartFoot">
+        <div class="totals">
+          <div class="totals__row"><span>Subtotal</span><span id="tSubtotal">$0 COP</span></div>
+          <div class="totals__row"><span>Envío</span><span id="tShipping">—</span></div>
+          <div class="totals__row totals__row--total"><span>Total</span><span id="tTotal">$0 COP</span></div>
+        </div>
+        <button class="btn btn--primary btn--block" type="button" id="goCheckout">
+          CONTINUAR CON EL PEDIDO <svg aria-hidden="true"><use href="#i-arrow"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Vista: datos de envío -->
+    <div class="drawer__view" id="viewCheckout" hidden>
+      <form class="checkout" id="checkoutForm" novalidate>
+        <button class="link-back" type="button" id="backToCart">
+          <svg aria-hidden="true"><use href="#i-chev-l"/></svg> Volver al carrito
+        </button>
+        <p class="checkout__intro">Completa tus datos y te enviamos el pedido armado a WhatsApp. Confirmamos disponibilidad y te pasamos los datos de pago.</p>
+
+        <div class="field">
+          <label for="fNombre">Nombre completo *</label>
+          <input id="fNombre" name="nombre" type="text" autocomplete="name" required minlength="3" placeholder="Ej. Valentina Gómez">
+          <small class="field__error"></small>
+        </div>
+        <div class="field">
+          <label for="fTelefono">Celular *</label>
+          <input id="fTelefono" name="telefono" type="tel" inputmode="numeric" autocomplete="tel" required placeholder="Ej. 300 123 4567">
+          <small class="field__error"></small>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label for="fCiudad">Ciudad *</label>
+            <input id="fCiudad" name="ciudad" type="text" autocomplete="address-level2" required placeholder="Ej. Medellín">
+            <small class="field__error"></small>
+          </div>
+          <div class="field">
+            <label for="fBarrio">Barrio</label>
+            <input id="fBarrio" name="barrio" type="text" placeholder="Ej. Laureles">
+            <small class="field__error"></small>
+          </div>
+        </div>
+        <div class="field">
+          <label for="fDireccion">Dirección *</label>
+          <input id="fDireccion" name="direccion" type="text" autocomplete="street-address" required placeholder="Ej. Calle 10 # 43-21 Apto 502">
+          <small class="field__error"></small>
+        </div>
+        <div class="field">
+          <label for="fPago">Método de pago</label>
+          <select id="fPago" name="pago">
+            <option value="Contra entrega">Contra entrega</option>
+            <option value="Nequi">Nequi</option>
+            <option value="Daviplata">Daviplata</option>
+            <option value="Transferencia Bancolombia">Transferencia Bancolombia</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fNotas">Notas (opcional)</label>
+          <textarea id="fNotas" name="notas" rows="2" placeholder="Ej. Entregar en portería, horario de la tarde"></textarea>
+        </div>
+
+        <div class="totals totals--compact">
+          <div class="totals__row"><span>Productos</span><span id="cSubtotal">$0 COP</span></div>
+          <div class="totals__row"><span>Envío</span><span id="cShipping">—</span></div>
+          <div class="totals__row totals__row--total"><span>Total</span><span id="cTotal">$0 COP</span></div>
+        </div>
+
+        <button class="btn btn--wa btn--block" type="submit">
+          <svg aria-hidden="true"><use href="#i-wa"/></svg> PEDIR POR WHATSAPP
+        </button>
+      </form>
+    </div>
+
+    <!-- Vista: pedido enviado -->
+    <div class="drawer__view drawer__view--center" id="viewDone" hidden>
+      <div class="done">
+        <div class="done__icon"><svg aria-hidden="true"><use href="#i-wa"/></svg></div>
+        <p class="done__big">¡PEDIDO LISTO!</p>
+        <p>Abrimos WhatsApp con tu pedido. Solo dale <strong>enviar</strong> y te confirmamos en minutos.</p>
+        <a class="btn btn--ghost btn--block" id="waRetry" href="#" target="_blank" rel="noopener">¿NO SE ABRIÓ? TOCA AQUÍ</a>
+        <button class="btn btn--primary btn--block" type="button" id="finishOrder">VACIAR CARRITO Y SEGUIR</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Notificaciones -->
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <script src="js/seed.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

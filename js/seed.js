@@ -1,0 +1,213 @@
+/* NØRTE · Datos semilla (respaldo offline). Generado desde /data/productos.json y /data/config.json */
+window.NORTE_SEED = {
+  productos: [
+  {
+    "id": "nrt-001",
+    "nombre": "Tee Oversize Blackout",
+    "categoria": "camisetas",
+    "descripcion": "Camiseta oversize en algodón peinado 240 g. Hombro caído, cuello acanalado grueso y estampado tono a tono en el pecho. El básico negro que combina con todo tu fit.",
+    "precio": 85000,
+    "precioOferta": 0,
+    "enPromocion": false,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1622519407650-3df9883f76a5?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["S", "M", "L", "XL"],
+    "nuevo": true,
+    "masVendido": true,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-002",
+    "nombre": "Tee Essential Cloud",
+    "categoria": "camisetas",
+    "descripcion": "Camiseta blanca de corte boxy en algodón 100% pre-encogido. Costuras reforzadas y tacto suave que aguanta lavada tras lavada sin perder la forma.",
+    "precio": 69000,
+    "precioOferta": 0,
+    "enPromocion": false,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1622445275463-afa2ab738c34?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["S", "M", "L", "XL"],
+    "nuevo": false,
+    "masVendido": true,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-003",
+    "nombre": "Tee Bone Grip",
+    "categoria": "camisetas",
+    "descripcion": "Gráfico frontal en serigrafía de alta densidad sobre camiseta negra heavyweight. Edición limitada del Drop 06: cuando se agota, no vuelve.",
+    "precio": 119000,
+    "precioOferta": 89000,
+    "enPromocion": true,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1618517351616-38fb9c5210c6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["S", "M", "L", "XL"],
+    "nuevo": false,
+    "masVendido": false,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-004",
+    "nombre": "Cargo Utility Night",
+    "categoria": "pantalones",
+    "descripcion": "Pantalón cargo en drill ripstop con seis bolsillos, cintura ajustable y bota con cordón. Hecho para moverte por la ciudad de día y de noche.",
+    "precio": 145000,
+    "precioOferta": 0,
+    "enPromocion": false,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["S", "M", "L", "XL"],
+    "nuevo": true,
+    "masVendido": false,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-005",
+    "nombre": "Jean Baggy Destroyed",
+    "categoria": "pantalones",
+    "descripcion": "Jean de tiro medio y pierna ancha con rotos hechos a mano y lavado vintage. Denim rígido de 13 oz que se adapta a tu cuerpo con el uso.",
+    "precio": 199000,
+    "precioOferta": 159000,
+    "enPromocion": true,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1604176354204-9268737828e4?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["S", "M", "L", "XL"],
+    "nuevo": false,
+    "masVendido": true,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-006",
+    "nombre": "Retro High Bred",
+    "categoria": "calzado",
+    "descripcion": "Tenis de caña alta con capellada en cuero sintético premium, suela de goma vulcanizada y plantilla acolchada. Un clásico de cancha llevado a la calle.",
+    "precio": 389000,
+    "precioOferta": 0,
+    "enPromocion": false,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1584735175315-9d5df23860e6?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["38", "39", "40", "41", "42"],
+    "nuevo": true,
+    "masVendido": false,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-007",
+    "nombre": "Air Pulse Runner",
+    "categoria": "calzado",
+    "descripcion": "Running urbano con cámara de aire visible, upper en malla transpirable y suela de alta tracción. Ligero, cómodo y con presencia.",
+    "precio": 349000,
+    "precioOferta": 299000,
+    "enPromocion": true,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["38", "39", "40", "41", "42"],
+    "nuevo": false,
+    "masVendido": true,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-008",
+    "nombre": "Court Low Cloud",
+    "categoria": "calzado",
+    "descripcion": "Tenis bajos totalmente blancos con perforaciones laterales y entresuela de espuma. El par que salva cualquier outfit.",
+    "precio": 259000,
+    "precioOferta": 0,
+    "enPromocion": false,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["38", "39", "40", "41", "42"],
+    "nuevo": true,
+    "masVendido": false,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-009",
+    "nombre": "Cap Trucker Ghost",
+    "categoria": "gorras",
+    "descripcion": "Gorra trucker con frente estructurado, malla trasera transpirable y cierre snapback. Visera curva lista para usar.",
+    "precio": 59000,
+    "precioOferta": 0,
+    "enPromocion": false,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1556306535-0f09a537f0a3?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["Única"],
+    "nuevo": true,
+    "masVendido": false,
+    "agotado": false,
+    "activo": true
+  },
+  {
+    "id": "nrt-010",
+    "nombre": "Dad Hat Washed",
+    "categoria": "gorras",
+    "descripcion": "Gorra de seis paneles en algodón lavado a la piedra, perfil bajo y hebilla metálica ajustable. Mejor con cada uso.",
+    "precio": 69000,
+    "precioOferta": 55000,
+    "enPromocion": true,
+    "imagenes": [
+      "https://images.unsplash.com/photo-1521369909029-2afed882baee?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1534215754734-18e55d13e346?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1575428652377-a2d80e2277fc?auto=format&fit=crop&w=900&q=80"
+    ],
+    "tallas": ["Única"],
+    "nuevo": false,
+    "masVendido": true,
+    "agotado": false,
+    "activo": true
+  }
+],
+  config: {
+  "marca": "NØRTE",
+  "anuncios": [
+    "ENVÍOS GRATIS A TODO EL PAÍS POR COMPRAS SUPERIORES A $150.000",
+    "DROP 07 YA DISPONIBLE · UNIDADES LIMITADAS",
+    "PAGO CONTRA ENTREGA EN CIUDADES PRINCIPALES"
+  ],
+  "whatsapp": "573001234567",
+  "envioGratisDesde": 150000,
+  "costoEnvio": 12000,
+  "hero": {
+    "etiqueta": "DROP 07 · TEMPORADA NOCTURNA",
+    "titulo": "NUEVO DROP",
+    "subtitulo": "Siluetas oversize, cargos utilitarios y tenis que no pasan desapercibidos. Unidades limitadas, sin reposición.",
+    "cta": "VER EL DROP",
+    "imagen": "https://images.unsplash.com/photo-1588117305388-c2631a279f82?auto=format&fit=crop&w=1200&q=80"
+  }
+}
+};
